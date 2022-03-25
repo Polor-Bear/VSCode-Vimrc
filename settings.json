@@ -144,15 +144,39 @@
   ],
   "vim.normalModeKeyBindings": [
     {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["W"],
+      "after": ["5", "w"]
+    },
+    {
+      "before": ["B"],
+      "after": ["5", "b"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
       "before": [">"],
       "commands": ["editor.action.indentLines"]
     },
     {
       "before": ["<"],
       "commands": ["editor.action.outdentLines"]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
+    },
     {
       "before": ["n"],
       "after": ["<nop>"]
@@ -194,30 +218,6 @@
       "after": [":"]
     },
     {
-      "before": ["J"],
-      "after": ["5", "j"]
-    },
-    {
-      "before": ["K"],
-      "after": ["5", "k"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    },
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["W"],
-      "after": ["5", "w"]
-    },
-    {
-      "before": ["B"],
-      "after": ["5", "b"]
-    },
-    {
       "before": ["="],
       "after": ["n", "z","z"]
     },
@@ -252,6 +252,22 @@
       "after": ["5", "k"]
     },
     {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["W"],
+      "after": ["5", "w"]
+    },
+    {
+      "before": ["B"],
+      "after": ["5", "b"]
+    },
+    {
       "before": [">"],
       "commands": ["editor.action.indentLines"]
     },
@@ -280,9 +296,7 @@
   "leetcode.workspaceFolder": "",
   "leetcode.defaultLanguage": "cpp",
   "explorer.confirmDelete": false,
-  "files.associations": {
-    "*.cpp": "cpp"
-  },
+  "files.associations": {"*.cpp": "cpp"},
   "workbench.activityBar.visible": false,
   "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,

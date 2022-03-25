@@ -21,11 +21,6 @@
         "when": "textInputFocus"
     },
     {
-        "key": "up",
-        "command": "-cursorUp",
-        "when": "textInputFocus"
-    },
-    {
         "key": "ctrl+shift+alt+p",
         "command": "workbench.action.toggleZenMode"
     },

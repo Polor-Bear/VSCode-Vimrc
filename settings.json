@@ -1,0 +1,290 @@
+//  __  ____   __  __     _____ __  __ ____   ____
+// |  \/  \ \ / /  \ \   / /_ _|  \/  |  _ \ / ___|
+// | |\/| |\ V /    \ \ / / | || |\/| | |_) | |
+// | |  | | | |      \ V /  | || |  | |  _ <| |___
+// |_|  |_| |_|       \_/  |___|_|  |_|_| \_\\____|
+//
+// Author: @Polor-Bear
+//
+// Checkout-list
+// vim-esearch
+// fmoralesc/worldslice
+// SidOfc/mkdx
+{
+  "vim.easymotion": true,
+  "vim.easymotionDimColor": "#430B61",
+  "vim.easymotionDimBackground": true,
+  "vim.easymotionMarkerForegroundColorOneChar": "#00ffff",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ff00",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#ff0000",
+  "vim.shell": "~/AppData/Local/Microsoft/WindowsApps/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe",
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "1033",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "C:/Users/y1097/scoop/apps/im-select/1.0.1/im-select.exe",
+  "vim.autoSwitchInputMethod.switchIMCmd": "C:/Users/y1097/scoop/apps/im-select/1.0.1/im-select.exe {im}",
+  "vim.sneak": true,
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
+  "vim.incsearch": true,
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "~/.vimrc",
+  "vim.useSystemClipboard": false,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.scroll": 15,
+  "scrolloff.scrolloff": 5,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": [";", "q"],
+      "after": ["<Esc>","/","<","b","r","<Space>","<CR>",
+      {
+    "commands":[":nohl"]
+      },
+      "c","6","l","|"
+      ]
+    },
+    {
+      "before": ["：", "F"],
+      "after": ["<Esc>","/","<","+","+",">","<CR>",
+      {
+    "commands":[":nohl"]
+      },
+      "c","4","l"
+      ]
+    },
+    {
+      "before": [";", "f"],
+      "after": ["<Esc>","/","<","+","+",">","<CR>",
+      {
+    "commands":[":nohl"]
+      },
+      "c","4","l"
+      ]
+    },
+    {
+      "before": [";", "w"],
+      "after": ["<Esc>","/","<Space>","<","+","+",">","<CR>",
+      {
+    "commands":[":nohl"]
+      },
+      "c","5","l"
+      ]
+    },
+    {
+      "before": [";", "n"],
+      "after": ["-","-","-","<CR>","<CR>"]
+    },
+    {
+      "before": [";", "b"],
+      "after": ["*","*","*","*","<Space>","<","+","+",">","<Esc>","F","*","h","i"]
+    },
+    {
+      "before": [";", "s"],
+      "after": ["~","~","~","~","<Space>","<","+","+",">","<Esc>","F","~","h","i"]
+    },
+    {
+      "before": [";", "i"],
+      "after": ["~","~","<Space>","<","+","+",">","<Esc>","F","~","i"]
+    },
+    {
+      "before": [";", "d"],
+      "after": ["`","`","<Space>","<","+","+",">","<Esc>","F","`","i"]
+    },
+    {
+      "before": [";", "c"],
+      "after": ["`","`","`","<CR>","<","+","+",">","<CR>","`","`","`","<CR>","<CR>","<","+","+",">","<Esc>","4","k","A"]
+    },
+    {
+      "before": [";", "h"],
+      "after": ["=","=","=","=","<Space>","<","+","+",">","<Esc>","F","=","h","i"]
+    },
+    {
+      "before": [";", "m"],
+      "after": ["-","<Space>","[","<Space>","]","<Space>"]
+    },
+    {
+      "before": [";", "p"],
+      "after": ["!","[","]","(","<","+","+",">",")","<Space>","<","+","+",">","<Esc>","F","]","i"]
+    },
+    {
+      "before": [";", "a"],
+      "after": ["[","]","(","<","+","+",">",")","<Space>","<","+","+",">","<Esc>","F","]","i"]
+    },
+    {
+      "before": [";", "e"],
+      "after": ["<","b","r","<Space>","/",">"]
+    },
+    {
+      "before": [";", "1"],
+      "after": ["#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+    },
+    {
+      "before": [";", "2"],
+      "after": ["#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+    },
+    {
+      "before": [";", "3"],
+      "after": ["#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+    },
+    {
+      "before": [";", "4"],
+      "after": ["#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+    },
+    {
+      "before": [";", "5"],
+      "after": ["#","#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+    },
+    {
+      "before": [";", "6"],
+      "after": ["#","#","#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+    },
+    {
+      "before": [";", "l"],
+      "after": ["-","-","-","-","-","-","-","-","<CR>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["n"],
+      "after": ["<nop>"]
+    },
+    {
+      "before": ["n"],
+      "after": ["="]
+    },
+    {
+      "before": ["<LEADER>","o"],
+      "after": ["z","a"]
+    },
+    {
+      "before": ["Y"],
+      "after": ["y","$"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["6","<C-y>"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["6","<C-e>"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["g","T"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["g","t"]
+    },
+    {
+      "before": ["<C-d>"],
+      "after": ["i","<C-d>"]
+    },
+    {
+      "before": ["leader",";"],
+      "after": [":"]
+    },
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["W"],
+      "after": ["5", "w"]
+    },
+    {
+      "before": ["B"],
+      "after": ["5", "b"]
+    },
+    {
+      "before": ["="],
+      "after": ["n", "z","z"]
+    },
+    {
+      "before": ["-"],
+      "after": ["N", "z","z"]
+    },
+    {
+      "before": ["<leader>","<CR>"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["n"],
+      "after": ["<nop>"]
+    },
+    {
+      "before": ["n"],
+      "after": ["="]
+    },
+    {
+      "before": ["Y"],
+      "after": ["\"", "+","y"]
+    },
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-d>": false,
+    "<C-f>": false,
+  },
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "cSpell.customDictionaries": {
+    "custom-dictionary-user": {
+      "name": "custom-dictionary-user",
+      "path": "~/.cspell/custom-dictionary-user.txt",
+      "addWords": true,
+      "scope": "user"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "python.testing.pytestEnabled": true,
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.workspaceFolder": "",
+  "leetcode.defaultLanguage": "cpp",
+  "explorer.confirmDelete": false,
+  "files.associations": {
+    "*.cpp": "cpp"
+  },
+  "workbench.activityBar.visible": false,
+  "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "security.workspace.trust.untrustedFiles": "open"
+}

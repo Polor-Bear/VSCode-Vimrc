@@ -1,1 +1,3 @@
-# VSCode-Vim
+# My-VSCode-Vim-settings
+
+init.json

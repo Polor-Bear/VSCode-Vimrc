@@ -43,5 +43,71 @@
         "key": "alt+k",
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+alt+h",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "shift+alt+j",
+        "command": "extension.vim_cmd+alt+down",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "extension.vim_cmd+alt+up",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "-extension.vim_ctrl+]",
+        "when": "editorTextFocus && vim.active && vim.use<C-]> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "-markdown.extension.onIndentLines",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
+    },
+    {
+        "key": "enter",
+        "command": "wiki.goToWiki",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "-wiki.goToWiki"
+    },
+    {
+        "key": "ctrl+w ctrl+k",
+        "command": "wiki.openWiki"
+    },
+    {
+        "key": "ctrl+w ctrl+d",
+        "command": "wiki.deleteWiki"
+    },
+    {
+        "key": "ctrl+w ctrl+e",
+        "command": "wiki.exportWiki"
+    },
+    {
+        "key": "ctrl+w ctrl+s",
+        "command": "wiki.searchWiki"
+    },
+    {
+        "key": "ctrl+w ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
     }
 ]

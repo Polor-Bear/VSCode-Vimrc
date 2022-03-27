@@ -17,11 +17,11 @@
   "vim.easymotionMarkerForegroundColorOneChar": "#00ffff",
   "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ff00",
   "vim.easymotionMarkerForegroundColorTwoCharSecond": "#ff0000",
-  "vim.shell": "~/AppData/Local/Microsoft/WindowsApps/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe",
   "vim.autoSwitchInputMethod.enable": true,
   "vim.autoSwitchInputMethod.defaultIM": "1033",
   "vim.autoSwitchInputMethod.obtainIMCmd": "C:/Users/y1097/scoop/apps/im-select/1.0.1/im-select.exe",
   "vim.autoSwitchInputMethod.switchIMCmd": "C:/Users/y1097/scoop/apps/im-select/1.0.1/im-select.exe {im}",
+  "vim.shell": "~/AppData/Local/Microsoft/WindowsApps/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe",
   "vim.sneak": true,
   "vim.sneakUseIgnorecaseAndSmartcase": true,
   "vim.incsearch": true,
@@ -32,248 +32,134 @@
   "vim.hlsearch": true,
   "vim.scroll": 15,
   "scrolloff.scrolloff": 5,
-  "vim.insertModeKeyBindingsNonRecursive": [
-    {
-      "before": [";", "q"],
-      "after": ["<Esc>","/","<","b","r","<Space>","<CR>",
-      {
-    "commands":[":nohl"]
-      },
-      "c","6","l","|"
-      ]
-    },
-    {
-      "before": ["：", "F"],
-      "after": ["<Esc>","/","<","+","+",">","<CR>",
-      {
-    "commands":[":nohl"]
-      },
-      "c","4","l"
-      ]
-    },
-    {
-      "before": [";", "f"],
-      "after": ["<Esc>","/","<","+","+",">","<CR>",
-      {
-    "commands":[":nohl"]
-      },
-      "c","4","l"
-      ]
-    },
-    {
-      "before": [";", "w"],
-      "after": ["<Esc>","/","<Space>","<","+","+",">","<CR>",
-      {
-    "commands":[":nohl"]
-      },
-      "c","5","l"
-      ]
-    },
-    {
-      "before": [";", "n"],
-      "after": ["-","-","-","<CR>","<CR>"]
-    },
-    {
-      "before": [";", "b"],
-      "after": ["*","*","*","*","<Space>","<","+","+",">","<Esc>","F","*","h","i"]
-    },
-    {
-      "before": [";", "s"],
-      "after": ["~","~","~","~","<Space>","<","+","+",">","<Esc>","F","~","h","i"]
-    },
-    {
-      "before": [";", "i"],
-      "after": ["~","~","<Space>","<","+","+",">","<Esc>","F","~","i"]
-    },
-    {
-      "before": [";", "d"],
-      "after": ["`","`","<Space>","<","+","+",">","<Esc>","F","`","i"]
-    },
-    {
-      "before": [";", "c"],
-      "after": ["`","`","`","<CR>","<","+","+",">","<CR>","`","`","`","<CR>","<CR>","<","+","+",">","<Esc>","4","k","A"]
-    },
-    {
-      "before": [";", "h"],
-      "after": ["=","=","=","=","<Space>","<","+","+",">","<Esc>","F","=","h","i"]
-    },
-    {
-      "before": [";", "m"],
-      "after": ["-","<Space>","[","<Space>","]","<Space>"]
-    },
-    {
-      "before": [";", "p"],
-      "after": ["!","[","]","(","<","+","+",">",")","<Space>","<","+","+",">","<Esc>","F","]","i"]
-    },
-    {
-      "before": [";", "a"],
-      "after": ["[","]","(","<","+","+",">",")","<Space>","<","+","+",">","<Esc>","F","]","i"]
-    },
-    {
-      "before": [";", "e"],
-      "after": ["<","b","r","<Space>","/",">"]
-    },
-    {
-      "before": [";", "1"],
-      "after": ["#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
-    },
-    {
-      "before": [";", "2"],
-      "after": ["#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
-    },
-    {
-      "before": [";", "3"],
-      "after": ["#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
-    },
-    {
-      "before": [";", "4"],
-      "after": ["#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
-    },
-    {
-      "before": [";", "5"],
-      "after": ["#","#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
-    },
-    {
-      "before": [";", "6"],
-      "after": ["#","#","#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
-    },
-    {
-      "before": [";", "l"],
-      "after": ["-","-","-","-","-","-","-","-","<CR>"]
-    }
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "python.testing.pytestEnabled": true,
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.workspaceFolder": "",
+  "leetcode.defaultLanguage": "cpp",
+  "explorer.confirmDelete": false,
+  "files.associations": {"*.cpp": "cpp"},
+  "workbench.activityBar.visible": false,
+  "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "code-runner.runInTerminal": true,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "yapf",
+  "editor.formatOnType": true,
+  "python.linting.flake8Args": [
+    // "--max-line-length=1000",
+    // "--extend-ignore=E301,E302,E305,E701"
   ],
+  "[html]": {
+    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+  },
+  "wiki.targetPath": "D:\\VSCode_Wiki",
+  "wiki.targetRootFile": "D:\\VSCode_Wiki\\Export",
+  "window.zoomLevel": -1,
   "vim.normalModeKeyBindings": [
     {
-      "before": ["J"],
-      "after": ["5", "j"]
+      "before": ["J"],"after": ["5", "j"]
     },
     {
-      "before": ["K"],
-      "after": ["5", "k"]
+      "before": ["K"],"after": ["5", "k"]
     },
     {
-      "before": ["H"],
-      "after": ["^"]
+      "before": ["H"],"after": ["^"]
     },
     {
-      "before": ["L"],
-      "after": ["$"]
+      "before": ["L"],"after": ["$"]
     },
     {
-      "before": ["W"],
-      "after": ["5", "w"]
+      "before": ["W"],"after": ["5", "w"]
     },
     {
-      "before": ["B"],
-      "after": ["5", "b"]
+      "before": ["B"],"after": ["5", "b"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"]
+      "before": ["n"],"after": ["<nop>"]
     },
     {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"]
+      "before": ["n"],"after": ["="]
     },
     {
-      "before": ["n"],
-      "after": ["<nop>"]
+      "before": ["Y"],"after": ["y","$"]
     },
     {
-      "before": ["n"],
-      "after": ["="]
+      "before": ["<C-j>"],"after": ["6","<C-y>"]
     },
     {
-      "before": ["<LEADER>","o"],
-      "after": ["z","a"]
+      "before": ["<C-k>"],"after": ["6","<C-e>"]
     },
     {
-      "before": ["Y"],
-      "after": ["y","$"]
+      "before": ["<C-h>"],"after": ["g","T"]
     },
     {
-      "before": ["<C-j>"],
-      "after": ["6","<C-y>"]
+      "before": ["<C-l>"],"after": ["g","t"]
     },
     {
-      "before": ["<C-k>"],
-      "after": ["6","<C-e>"]
+      "before": ["<C-d>"],"after": ["i","<C-d>"]
     },
     {
-      "before": ["<C-h>"],
-      "after": ["g","T"]
+      "before": ["leader",";"],"after": [":"]
     },
     {
-      "before": ["<C-l>"],
-      "after": ["g","t"]
+      "before": ["="],"after": ["n", "z","z"]
     },
     {
-      "before": ["<C-d>"],
-      "after": ["i","<C-d>"]
+      "before": ["-"],"after": ["N", "z","z"]
     },
     {
-      "before": ["leader",";"],
-      "after": [":"]
+      "before": ["<LEADER>","o"],"after": ["z","a"]
     },
     {
-      "before": ["="],
-      "after": ["n", "z","z"]
+      "before": [">"],"commands": ["editor.action.indentLines"]
     },
     {
-      "before": ["-"],
-      "after": ["N", "z","z"]
+      "before": ["<"],"commands": ["editor.action.outdentLines"]
     },
     {
-      "before": ["<leader>","<CR>"],
-      "commands": [":nohl"]
+      "before": ["<leader>","<CR>"],"commands": [":nohl"]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": ["n"],
-      "after": ["<nop>"]
+      "before": ["n"],"after": ["="]
     },
     {
-      "before": ["n"],
-      "after": ["="]
+      "before": ["Y"],"after": ["\"", "+","y"]
     },
     {
-      "before": ["Y"],
-      "after": ["\"", "+","y"]
+      "before": ["<C-h>"],"after": ["g","T"]
     },
     {
-      "before": ["J"],
-      "after": ["5", "j"]
+      "before": ["<C-l>"],"after": ["g","t"]
     },
     {
-      "before": ["K"],
-      "after": ["5", "k"]
+      "before": ["J"],"after": ["5", "j"]
     },
     {
-      "before": ["H"],
-      "after": ["^"]
+      "before": ["K"],"after": ["5", "k"]
     },
     {
-      "before": ["L"],
-      "after": ["$"]
+      "before": ["H"],"after": ["^"]
     },
     {
-      "before": ["W"],
-      "after": ["5", "w"]
+      "before": ["L"],"after": ["$"]
     },
     {
-      "before": ["B"],
-      "after": ["5", "b"]
+      "before": ["W"],"after": ["5", "w"]
     },
     {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"]
+      "before": ["B"],"after": ["5", "b"]
     },
     {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"]
+      "before": [">"],"commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],"commands": ["editor.action.outdentLines"]
     },
   ],
   "vim.leader": "<space>",
@@ -290,15 +176,113 @@
       "scope": "user"
     }
   },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "python.testing.pytestEnabled": true,
-  "leetcode.endpoint": "leetcode-cn",
-  "leetcode.workspaceFolder": "",
-  "leetcode.defaultLanguage": "cpp",
-  "explorer.confirmDelete": false,
-  "files.associations": {"*.cpp": "cpp"},
-  "workbench.activityBar.visible": false,
-  "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "security.workspace.trust.untrustedFiles": "open"
+  "vim.insertModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": [";", "q"],
+  //     "after": ["<Esc>","/","<","b","r","<Space>","<CR>",
+  //     {
+  //   "commands":[":nohl"]
+  //     },
+  //     "c","6","l","|"
+  //     ]
+  //   },
+  //   {
+  //     "before": ["：", "F"],
+  //     "after": ["<Esc>","/","<","+","+",">","<CR>",
+  //     {
+  //   "commands":[":nohl"]
+  //     },
+  //     "c","4","l"
+  //     ]
+  //   },
+  //   {
+  //     "before": [";", "f"],
+  //     "after": ["<Esc>","/","<","+","+",">","<CR>",
+  //     {
+  //   "commands":[":nohl"]
+  //     },
+  //     "c","4","l"
+  //     ]
+  //   },
+  //   {
+  //     "before": [";", "w"],
+  //     "after": ["<Esc>","/","<Space>","<","+","+",">","<CR>",
+  //     {
+  //   "commands":[":nohl"]
+  //     },
+  //     "c","5","l"
+  //     ]
+  //   },
+  //   {
+  //     "before": [";", "n"],
+  //     "after": ["-","-","-","<CR>","<CR>"]
+  //   },
+  //   {
+  //     "before": [";", "b"],
+  //     "after": ["*","*","*","*","<Space>","<","+","+",">","<Esc>","F","*","h","i"]
+  //   },
+  //   {
+  //     "before": [";", "s"],
+  //     "after": ["~","~","~","~","<Space>","<","+","+",">","<Esc>","F","~","h","i"]
+  //   },
+  //   {
+  //     "before": [";", "i"],
+  //     "after": ["~","~","<Space>","<","+","+",">","<Esc>","F","~","i"]
+  //   },
+  //   {
+  //     "before": [";", "d"],
+  //     "after": ["`","`","<Space>","<","+","+",">","<Esc>","F","`","i"]
+  //   },
+  //   {
+  //     "before": [";", "c"],
+  //     "after": ["`","`","`","<CR>","<","+","+",">","<CR>","`","`","`","<CR>","<CR>","<","+","+",">","<Esc>","4","k","A"]
+  //   },
+  //   {
+  //     "before": [";", "h"],
+  //     "after": ["=","=","=","=","<Space>","<","+","+",">","<Esc>","F","=","h","i"]
+  //   },
+  //   {
+  //     "before": [";", "m"],
+  //     "after": ["-","<Space>","[","<Space>","]","<Space>"]
+  //   },
+  //   {
+  //     "before": [";", "p"],
+  //     "after": ["!","[","]","(","<","+","+",">",")","<Space>","<","+","+",">","<Esc>","F","]","i"]
+  //   },
+  //   {
+  //     "before": [";", "a"],
+  //     "after": ["[","]","(","<","+","+",">",")","<Space>","<","+","+",">","<Esc>","F","]","i"]
+  //   },
+  //   {
+  //     "before": [";", "e"],
+  //     "after": ["<","b","r","<Space>","/",">"]
+  //   },
+  //   {
+  //     "before": [";", "1"],
+  //     "after": ["#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+  //   },
+  //   {
+  //     "before": [";", "2"],
+  //     "after": ["#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+  //   },
+  //   {
+  //     "before": [";", "3"],
+  //     "after": ["#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+  //   },
+  //   {
+  //     "before": [";", "4"],
+  //     "after": ["#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+  //   },
+  //   {
+  //     "before": [";", "5"],
+  //     "after": ["#","#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+  //   },
+  //   {
+  //     "before": [";", "6"],
+  //     "after": ["#","#","#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
+  //   },
+  //   {
+  //     "before": [";", "l"],"after": ["-","-","-","-","-","-","-","-","<CR>"]
+  //   }
+  ]
 }

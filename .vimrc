@@ -15,6 +15,16 @@ noremap <LEADER>k <C-w>k
 noremap <LEADER>l <C-w>l
 noremap <LEADER>qf <C-w>o
 
+noremap <LEADER>s{ bi{ <Esc>ea }<Esc>
+noremap <LEADER>s} bi{<Esc>ea}<Esc>
+noremap <LEADER>s[ bi[ <Esc>ea ]<Esc>
+noremap <LEADER>s] bi[<Esc>ea]<Esc>
+noremap <LEADER>s< bi< <Esc>ea ><Esc>
+noremap <LEADER>s( bi( <Esc>ea )<Esc>bb
+noremap <LEADER>s) bi(<Esc>ea)<Esc>bb
+noremap <LEADER>s' bi'<Esc>ea'<Esc>
+noremap <LEADER>s" bi"<Esc>ea"<Esc>
+
 " split the screens to up (horizontal), down(horizontal), left(vertical), right(vertical)
 noremap <LEADER>sk :sp<CR><C-w>k
 noremap <LEADER>sj :sp<CR>

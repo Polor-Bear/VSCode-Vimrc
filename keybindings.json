@@ -109,5 +109,45 @@
     {
         "key": "ctrl+w",
         "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "html.showPreviewToSide",
+        "when": "editorLangId == 'html'"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "-html.showPreviewToSide",
+        "when": "editorLangId == 'html'"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "markdown.showPreviewToSide",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "-markdown.showPreviewToSide",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "markdown-preview-enhanced.openPreviewToTheSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "-markdown-preview-enhanced.openPreviewToTheSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "pythonPreview.showPreviewToSide",
+        "when": "editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "-pythonPreview.showPreviewToSide",
+        "when": "editorLangId == 'python'"
     }
 ]

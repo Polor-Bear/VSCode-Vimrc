@@ -11,6 +11,7 @@
 // fmoralesc/worldslice
 // SidOfc/mkdx
 {
+  "window.zoomLevel": -1,
   "vim.easymotion": true,
   "vim.easymotionDimColor": "#430B61",
   "vim.easymotionDimBackground": true,
@@ -31,10 +32,12 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.scroll": 15,
+  "editor.mouseWheelZoom": false,
   "scrolloff.scrolloff": 5,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "python.testing.pytestEnabled": true,
   "leetcode.endpoint": "leetcode-cn",
+  "workbench.colorTheme": "One Dark Pro Darker",
   "leetcode.workspaceFolder": "",
   "leetcode.defaultLanguage": "cpp",
   "explorer.confirmDelete": false,
@@ -48,7 +51,7 @@
   "python.formatting.provider": "yapf",
   "editor.formatOnType": true,
   "python.linting.flake8Args": [
-    // "--max-line-length=1000",
+    "--max-line-length=1000",
     // "--extend-ignore=E301,E302,E305,E701"
   ],
   "[html]": {
@@ -56,118 +59,53 @@
   },
   "wiki.targetPath": "D:\\VSCode_Wiki",
   "wiki.targetRootFile": "D:\\VSCode_Wiki\\Export",
-  "window.zoomLevel": -1,
   "vim.normalModeKeyBindings": [
-    {
-      "before": ["J"],"after": ["5", "j"]
-    },
-    {
-      "before": ["K"],"after": ["5", "k"]
-    },
-    {
-      "before": ["H"],"after": ["^"]
-    },
-    {
-      "before": ["L"],"after": ["$"]
-    },
-    {
-      "before": ["W"],"after": ["5", "w"]
-    },
-    {
-      "before": ["B"],"after": ["5", "b"]
-    }
+    {"before": ["H"],"after": ["^"]},
+    {"before": ["L"],"after": ["$"]},
+    {"before": ["J"],"after": ["5", "j"]},
+    {"before": ["K"],"after": ["5", "k"]},
+    {"before": ["W"],"after": ["5", "w"]},
+    {"before": ["B"],"after": ["5", "b"]}
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["n"],"after": ["<nop>"]
-    },
-    {
-      "before": ["n"],"after": ["="]
-    },
-    {
-      "before": ["Y"],"after": ["y","$"]
-    },
-    {
-      "before": ["<C-j>"],"after": ["6","<C-y>"]
-    },
-    {
-      "before": ["<C-k>"],"after": ["6","<C-e>"]
-    },
-    {
-      "before": ["<C-h>"],"after": ["g","T"]
-    },
-    {
-      "before": ["<C-l>"],"after": ["g","t"]
-    },
-    {
-      "before": ["<C-d>"],"after": ["i","<C-d>"]
-    },
-    {
-      "before": ["leader",";"],"after": [":"]
-    },
-    {
-      "before": ["="],"after": ["n", "z","z"]
-    },
-    {
-      "before": ["-"],"after": ["N", "z","z"]
-    },
-    {
-      "before": ["<LEADER>","o"],"after": ["z","a"]
-    },
-    {
-      "before": [">"],"commands": ["editor.action.indentLines"]
-    },
-    {
-      "before": ["<"],"commands": ["editor.action.outdentLines"]
-    },
-    {
-      "before": ["<leader>","<CR>"],"commands": [":nohl"]
-    }
+    {"before": ["n"],"after": ["="]},
+    {"before": ["n"],"after": ["<nop>"]},
+    {"before": ["U"],"after": ["<C-r>"]},
+    {"before": ["Y"],"after": ["y","$"]},
+    {"before": ["="],"after": ["n", "z","z"]},
+    {"before": ["-"],"after": ["N", "z","z"]},
+    {"before": ["<C-h>"],"after": ["g","T"]},
+    {"before": ["<C-l>"],"after": ["g","t"]},
+    {"before": ["<C-j>"],"after": ["6","<C-y>"]},
+    {"before": ["<C-k>"],"after": ["6","<C-e>"]},
+    {"before": ["<C-d>"],"after": ["i","<C-d>"]},
+    {"before": ["<LEADER>","o"],"after": ["z","a"]},
+    {"before": ["<LEADER>","<CR>"],"commands": [":nohl"]},
+    {"before": [">"],"commands": ["editor.action.indentLines"]},
+    {"before": ["<"],"commands": ["editor.action.outdentLines"]},
+    {"before": ["<"],"commands": ["editor.action.outdentLines"]},
+    {"before": ["<LEADER>","g","y"],"command": ["workbench.action.toggleZenMode"]},
+    {"before": ["<LEADER>","s",">"],"after": ["b","i","<","<Esc>","e","a",">","<Esc>"]}
   ],
   "vim.visualModeKeyBindings": [
-    {
-      "before": ["n"],"after": ["="]
-    },
-    {
-      "before": ["Y"],"after": ["\"", "+","y"]
-    },
-    {
-      "before": ["<C-h>"],"after": ["g","T"]
-    },
-    {
-      "before": ["<C-l>"],"after": ["g","t"]
-    },
-    {
-      "before": ["J"],"after": ["5", "j"]
-    },
-    {
-      "before": ["K"],"after": ["5", "k"]
-    },
-    {
-      "before": ["H"],"after": ["^"]
-    },
-    {
-      "before": ["L"],"after": ["$"]
-    },
-    {
-      "before": ["W"],"after": ["5", "w"]
-    },
-    {
-      "before": ["B"],"after": ["5", "b"]
-    },
-    {
-      "before": [">"],"commands": ["editor.action.indentLines"]
-    },
-    {
-      "before": ["<"],"commands": ["editor.action.outdentLines"]
-    },
+    {"before": ["n"],"after": ["="]},
+    {"before": ["H"],"after": ["^"]},
+    {"before": ["L"],"after": ["$","h"]},
+    {"before": ["J"],"after": ["5", "j"]},
+    {"before": ["K"],"after": ["5", "k"]},
+    {"before": ["W"],"after": ["5", "w"]},
+    {"before": ["B"],"after": ["5", "b"]},
+    {"before": ["<C-h>"],"after": ["g","T"]},
+    {"before": ["<C-l>"],"after": ["g","t"]},
+    {"before": ["Y"],"after": ["\"", "+","y"]},
+    {"before": [">"],"commands": ["editor.action.indentLines"]},
+    {"before": ["<"],"commands": ["editor.action.outdentLines"]}
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-d>": false,
     "<C-f>": false,
   },
-  "workbench.colorTheme": "One Dark Pro Darker",
   "cSpell.customDictionaries": {
     "custom-dictionary-user": {
       "name": "custom-dictionary-user",

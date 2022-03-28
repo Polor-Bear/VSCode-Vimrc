@@ -15,6 +15,7 @@ noremap <LEADER>k <C-w>k
 noremap <LEADER>l <C-w>l
 noremap <LEADER>qf <C-w>o
 
+" custom vim surround
 noremap <LEADER>s{ bi{ <Esc>ea }<Esc>
 noremap <LEADER>s} bi{<Esc>ea}<Esc>
 noremap <LEADER>s[ bi[ <Esc>ea ]<Esc>

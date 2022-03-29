@@ -26,6 +26,11 @@ noremap <LEADER>s) bi(<Esc>ea)<Esc>bb
 noremap <LEADER>s' bi'<Esc>ea'<Esc>
 noremap <LEADER>s" bi"<Esc>ea"<Esc>
 
+" noremap <char><char> %x<C-o>x
+" noremap D %%x<C-o>x
+" noremap <C-m> vi(yda("0p
+" (sfjfasf(sofsf)aiofhsajdoi)
+
 " split the screens to up (horizontal), down(horizontal), left(vertical), right(vertical)
 noremap <LEADER>sk :sp<CR><C-w>k
 noremap <LEADER>sj :sp<CR>

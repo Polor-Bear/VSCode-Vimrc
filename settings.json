@@ -32,7 +32,7 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.scroll": 15,
-  "editor.mouseWheelZoom": false,
+  // "editor.mouseWheelZoom": false,
   "scrolloff.scrolloff": 5,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "python.testing.pytestEnabled": true,
@@ -43,6 +43,8 @@
   "explorer.confirmDelete": false,
   "files.associations": {"*.cpp": "cpp"},
   "workbench.activityBar.visible": false,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "security.workspace.trust.untrustedFiles": "open",
@@ -83,8 +85,6 @@
     {"before": ["<LEADER>","<CR>"],"commands": [":nohl"]},
     {"before": [">"],"commands": ["editor.action.indentLines"]},
     {"before": ["<"],"commands": ["editor.action.outdentLines"]},
-    {"before": ["<"],"commands": ["editor.action.outdentLines"]},
-    {"before": ["<LEADER>","g","y"],"command": ["workbench.action.toggleZenMode"]},
     {"before": ["<LEADER>","s",">"],"after": ["b","i","<","<Esc>","e","a",">","<Esc>"]}
   ],
   "vim.visualModeKeyBindings": [
@@ -222,5 +222,5 @@
   //   {
   //     "before": [";", "l"],"after": ["-","-","-","-","-","-","-","-","<CR>"]
   //   }
-  ]
+  ],
 }

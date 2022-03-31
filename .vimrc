@@ -7,6 +7,10 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+ER>fd /(\w+)\s*\1<CR>
+noremap <LEADER>tf ciwtrue<Esc>
+noremap <LEADER>ft ciwfalse<Esc>
+
 " Use <space> + new arrow keys for moving the cursor around windows
 "noremap <LEADER>w <C-w>w
 noremap <LEADER>h <C-w>h

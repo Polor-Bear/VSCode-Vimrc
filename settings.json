@@ -11,10 +11,14 @@
 // fmoralesc/worldslice
 // SidOfc/mkdx
 {
+  "vim.foldfix": true,
   "window.zoomLevel": -1,
   "vim.easymotion": true,
+  "editor.snippetSuggestions": "top",
   "vim.easymotionDimColor": "#430B61",
   "vim.easymotionDimBackground": true,
+  "python.testing.pytestEnabled": true,
+  "workbench.activityBar.visible": false,
   "vim.easymotionMarkerForegroundColorOneChar": "#00ffff",
   "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ff00",
   "vim.easymotionMarkerForegroundColorTwoCharSecond": "#ff0000",
@@ -35,15 +39,13 @@
   // "editor.mouseWheelZoom": false,
   "scrolloff.scrolloff": 5,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "python.testing.pytestEnabled": true,
   "leetcode.endpoint": "leetcode-cn",
   "workbench.colorTheme": "One Dark Pro Darker",
-  "leetcode.workspaceFolder": "",
   "leetcode.defaultLanguage": "cpp",
   "explorer.confirmDelete": false,
-  "files.associations": {"*.cpp": "cpp"},
-  "workbench.activityBar.visible": false,
   "editor.guides.bracketPairs": true,
+  "vim.camelCaseMotion.enable": true,
+  "files.associations": {"*.cpp": "cpp"},
   "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
@@ -64,22 +66,25 @@
   "vim.normalModeKeyBindings": [
     {"before": ["H"],"after": ["^"]},
     {"before": ["L"],"after": ["$"]},
-    {"before": ["J"],"after": ["5", "j"]},
-    {"before": ["K"],"after": ["5", "k"]},
-    {"before": ["W"],"after": ["5", "w"]},
-    {"before": ["B"],"after": ["5", "b"]}
+    {"before": ["J"],"after": ["5","j"]},
+    {"before": ["K"],"after": ["5","k"]},
+    {"before": ["W"],"after": ["5","w"]},
+    {"before": ["B"],"after": ["5","b"]},
+    {"before": ["<leader>","m"],"commands": ["bookmarks.toggle"]},
+    {"before": ["<leader>","l"],"commands": ["bookmarks.list"]},
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {"before": ["n"],"after": ["="]},
     {"before": ["n"],"after": ["<nop>"]},
     {"before": ["U"],"after": ["<C-r>"]},
     {"before": ["Y"],"after": ["y","$"]},
-    {"before": ["="],"after": ["n", "z","z"]},
-    {"before": ["-"],"after": ["N", "z","z"]},
+    {"before": ["="],"after": ["n","z","z"]},
+    {"before": ["-"],"after": ["N","z","z"]},
     {"before": ["<C-h>"],"after": ["g","T"]},
     {"before": ["<C-l>"],"after": ["g","t"]},
-    {"before": ["<C-j>"],"after": ["6","<C-y>"]},
-    {"before": ["<C-k>"],"after": ["6","<C-e>"]},
+    {"before": ["<CR>"],"after": ["v","i","w"]},
+    {"before": ["<C-j>"],"after": ["6","<C-e>"]},
+    {"before": ["<C-k>"],"after": ["6","<C-y>"]},
     {"before": ["<C-d>"],"after": ["i","<C-d>"]},
     {"before": ["<LEADER>","o"],"after": ["z","a"]},
     {"before": ["<LEADER>","<CR>"],"commands": [":nohl"]},
@@ -91,13 +96,15 @@
     {"before": ["n"],"after": ["="]},
     {"before": ["H"],"after": ["^"]},
     {"before": ["L"],"after": ["$","h"]},
-    {"before": ["J"],"after": ["5", "j"]},
-    {"before": ["K"],"after": ["5", "k"]},
-    {"before": ["W"],"after": ["5", "w"]},
-    {"before": ["B"],"after": ["5", "b"]},
+    {"before": ["J"],"after": ["5","j"]},
+    {"before": ["K"],"after": ["5","k"]},
+    {"before": ["W"],"after": ["5","w"]},
+    {"before": ["B"],"after": ["5","b"]},
+    {"before": ["<CR>"],"after": ["a","f"]},
     {"before": ["<C-h>"],"after": ["g","T"]},
     {"before": ["<C-l>"],"after": ["g","t"]},
-    {"before": ["Y"],"after": ["\"", "+","y"]},
+    {"before": ["Y"],"after": ["\"","+","y"]},
+    {"before": ["p"],"after": ["p","g","v","y"]},
     {"before": [">"],"commands": ["editor.action.indentLines"]},
     {"before": ["<"],"commands": ["editor.action.outdentLines"]}
   ],
@@ -116,7 +123,7 @@
   },
   "vim.insertModeKeyBindingsNonRecursive": [
   //   {
-  //     "before": [";", "q"],
+  //     "before": [";","q"],
   //     "after": ["<Esc>","/","<","b","r","<Space>","<CR>",
   //     {
   //   "commands":[":nohl"]
@@ -125,7 +132,7 @@
   //     ]
   //   },
   //   {
-  //     "before": ["：", "F"],
+  //     "before": ["：","F"],
   //     "after": ["<Esc>","/","<","+","+",">","<CR>",
   //     {
   //   "commands":[":nohl"]
@@ -134,7 +141,7 @@
   //     ]
   //   },
   //   {
-  //     "before": [";", "f"],
+  //     "before": [";","f"],
   //     "after": ["<Esc>","/","<","+","+",">","<CR>",
   //     {
   //   "commands":[":nohl"]
@@ -143,7 +150,7 @@
   //     ]
   //   },
   //   {
-  //     "before": [";", "w"],
+  //     "before": [";","w"],
   //     "after": ["<Esc>","/","<Space>","<","+","+",">","<CR>",
   //     {
   //   "commands":[":nohl"]
@@ -152,75 +159,75 @@
   //     ]
   //   },
   //   {
-  //     "before": [";", "n"],
+  //     "before": [";","n"],
   //     "after": ["-","-","-","<CR>","<CR>"]
   //   },
   //   {
-  //     "before": [";", "b"],
+  //     "before": [";","b"],
   //     "after": ["*","*","*","*","<Space>","<","+","+",">","<Esc>","F","*","h","i"]
   //   },
   //   {
-  //     "before": [";", "s"],
+  //     "before": [";","s"],
   //     "after": ["~","~","~","~","<Space>","<","+","+",">","<Esc>","F","~","h","i"]
   //   },
   //   {
-  //     "before": [";", "i"],
+  //     "before": [";","i"],
   //     "after": ["~","~","<Space>","<","+","+",">","<Esc>","F","~","i"]
   //   },
   //   {
-  //     "before": [";", "d"],
+  //     "before": [";","d"],
   //     "after": ["`","`","<Space>","<","+","+",">","<Esc>","F","`","i"]
   //   },
   //   {
-  //     "before": [";", "c"],
+  //     "before": [";","c"],
   //     "after": ["`","`","`","<CR>","<","+","+",">","<CR>","`","`","`","<CR>","<CR>","<","+","+",">","<Esc>","4","k","A"]
   //   },
   //   {
-  //     "before": [";", "h"],
+  //     "before": [";","h"],
   //     "after": ["=","=","=","=","<Space>","<","+","+",">","<Esc>","F","=","h","i"]
   //   },
   //   {
-  //     "before": [";", "m"],
+  //     "before": [";","m"],
   //     "after": ["-","<Space>","[","<Space>","]","<Space>"]
   //   },
   //   {
-  //     "before": [";", "p"],
+  //     "before": [";","p"],
   //     "after": ["!","[","]","(","<","+","+",">",")","<Space>","<","+","+",">","<Esc>","F","]","i"]
   //   },
   //   {
-  //     "before": [";", "a"],
+  //     "before": [";","a"],
   //     "after": ["[","]","(","<","+","+",">",")","<Space>","<","+","+",">","<Esc>","F","]","i"]
   //   },
   //   {
-  //     "before": [";", "e"],
+  //     "before": [";","e"],
   //     "after": ["<","b","r","<Space>","/",">"]
   //   },
   //   {
-  //     "before": [";", "1"],
+  //     "before": [";","1"],
   //     "after": ["#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
   //   },
   //   {
-  //     "before": [";", "2"],
+  //     "before": [";","2"],
   //     "after": ["#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
   //   },
   //   {
-  //     "before": [";", "3"],
+  //     "before": [";","3"],
   //     "after": ["#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
   //   },
   //   {
-  //     "before": [";", "4"],
+  //     "before": [";","4"],
   //     "after": ["#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
   //   },
   //   {
-  //     "before": [";", "5"],
+  //     "before": [";","5"],
   //     "after": ["#","#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
   //   },
   //   {
-  //     "before": [";", "6"],
+  //     "before": [";","6"],
   //     "after": ["#","#","#","#","#","#","<Space>","<CR>","<","+","+",">","<Esc>","k","A"]
   //   },
   //   {
-  //     "before": [";", "l"],"after": ["-","-","-","-","-","-","-","-","<CR>"]
+  //     "before": [";","l"],"after": ["-","-","-","-","-","-","-","-","<CR>"]
   //   }
   ],
 }

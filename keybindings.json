@@ -87,23 +87,23 @@
         "command": "-wiki.goToWiki"
     },
     {
-        "key": "ctrl+w ctrl+k",
+        "key": "alt+w alt+k",
         "command": "wiki.openWiki"
     },
     {
-        "key": "ctrl+w ctrl+d",
+        "key": "alt+w alt+d",
         "command": "wiki.deleteWiki"
     },
     {
-        "key": "ctrl+w ctrl+e",
+        "key": "alt+w alt+e",
         "command": "wiki.exportWiki"
     },
     {
-        "key": "ctrl+w ctrl+s",
+        "key": "alt+w alt+s",
         "command": "wiki.searchWiki"
     },
     {
-        "key": "ctrl+w ctrl+w",
+        "key": "ctrl+alt+w",
         "command": "workbench.action.closeActiveEditor"
     },
     {
@@ -149,5 +149,14 @@
         "key": "ctrl+k v",
         "command": "-pythonPreview.showPreviewToSide",
         "when": "editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+shift+9",
+        "command": "workbench.view.testing.focus"
+    },
+    {
+        "key": "shift+;",
+        "command": "vim.showQuickpickCmdLine",
+        "when": "inZenMode && vim.mode != 'Insert'" 
     }
 ]

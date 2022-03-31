@@ -22,18 +22,27 @@
 		],
 		"description": "Log output to console"
 	},
+	"\"": {
+		"prefix": "\"",
+		"body":[
+			"\"\"\"",
+			"\t${0:doc}",
+			"\"\""
+		],
+		"description": "Log output to console"
+	},
 	"if": {
 		"prefix": "if",
 		"body":[
-			"if ${1:condition}:",
-			"\t${2:pass}"
+			"if ${1:True}:",
+			"\t${0:pass}"
 		],
 		"description": "Log output to console"
 	},
 	"ife": {
 		"prefix": "ife",
 		"body":[
-			"if ${1:condition}:",
+			"if ${1:True}:",
 			"\t${2:pass}",
 			"else:",
 			"\t${3:pass}"
@@ -43,9 +52,9 @@
 	"ifee": {
 		"prefix": "ifee",
 		"body":[
-			"if ${1:condition}:",
+			"if ${1:True}:",
 			"\t${2:pass}",
-			"elif ${3:condition}:",
+			"elif ${3:True}:",
 			"\t${4:pass}",
 			"else:",
 			"\t${5:pass}"
@@ -55,8 +64,8 @@
 	"ei": {
 		"prefix": "ei",
 		"body":[
-			"elif ${1:condition}:",
-			"\t${2:pass}"
+			"elif ${1:True}:",
+			"\t${0:pass}"
 		],
 		"description": "Log output to console"
 	},
@@ -64,15 +73,96 @@
 		"prefix": "el",
 		"body":[
 			"else:",
-			"\t${1:pass}"
+			"\t${0:pass}"
+		],
+		"description": "Log output to console"
+	},
+	"while": {
+		"prefix": "while",
+		"body":[
+			"while ${1:True}:\n\t${0:pass}"
 		],
 		"description": "Log output to console"
 	},
 	"for": {
 		"prefix": "for",
 		"body":[
-			"for ${1:target_list} in ${2:expression_list}:",
-			"\t${3:pass}"
+			"for ${1:i} in ${2:expression_list}:",
+			"\t${0:pass}"
+		],
+		"description": "Log output to console"
+	},
+	"for in range": {
+		"prefix": ["fr", "forr"],
+		"body":[
+			"for ${1:i} in range(${2:length}):",
+			"\t${0:pass}"
+		],
+		"description": "Log output to console"
+	},
+	"def": {
+		"prefix": "def",
+		"body":[
+			"def ${1:funcname}(${2:argument}):",
+			"\t${0:pass}"
+		],
+		"description": "Log output to console"
+	},
+	"deff": {
+		"prefix": "deff",
+		"body":[
+			"def ${1:funcname}(${2:argument}):",
+			"\t\"\"\"${3:docstring for $1}\"\"\"",
+			"\t${0:pass}"
+		],
+		"description": "Log output to console"
+	},
+	"adef": {
+		"prefix": "adef",
+		"body":[
+			"async def ${1:funcname}(${2:argument}):",
+			"\t${0:pass}"
+		],
+		"description": "Log output to console"
+	},
+	"adeff": {
+		"prefix": "adeff",
+		"body":[
+			"async def ${1:funcname}(${2:argument}):",
+			"\t\"\"\"${3:docstring for $1}\"\"\"",
+			"\t${0:pass}"
+		],
+		"description": "Log output to console"
+	},
+	"defi": {
+		"prefix": "defi",
+		"body":[
+			"def __init__(self, ${1:args}):",
+			"\t${0:pass}"
+		],
+		"description": "Log output to console"
+	},
+	"defm": {
+		"prefix": "defm",
+		"body":[
+			"def ${1:mname}(self, ${2:arg}):",
+			"\t${0:pass}"
+		],
+		"description": "Log output to console"
+	},
+	"adefm": {
+		"prefix": "adefm",
+		"body":[
+			"async def ${1:mname}(self, ${2:arg}):",
+			"\t${0:pass}"
+		],
+		"description": "Log output to console"
+	},
+	"test": {
+		"prefix": "test",
+		"body":[
+			"def test_${1:description}(${2|indent(),self,''|}):",
+			"\t${0}"
 		],
 		"description": "Log output to console"
 	}

@@ -12,8 +12,16 @@
 // SidOfc/mkdx
 {
   "vim.foldfix": true,
+  "vim.visualstar": true,
   "window.zoomLevel": -1,
   "vim.easymotion": true,
+  "vim.sneakReplacesF": true,
+  "vim.statusBarColorControl": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+  },
   "editor.snippetSuggestions": "top",
   "vim.easymotionDimColor": "#430B61",
   "vim.easymotionDimBackground": true,
@@ -35,7 +43,7 @@
   "vim.useSystemClipboard": false,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
-  "vim.scroll": 15,
+  "vim.scroll": 5,
   // "editor.mouseWheelZoom": false,
   "scrolloff.scrolloff": 5,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
